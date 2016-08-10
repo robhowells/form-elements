@@ -1,0 +1,30 @@
+/*========================================
+
+	Typography Styles
+	_____________
+
+
+========================================*/
+
+@mixin headingFont() {
+    font-family: 'Arial', sans-serif;
+}
+
+@mixin bodyFont() {
+    font-family: 'Georgia', serif;
+}
+
+body {
+    @include bodyFont;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $primary;
+    line-height: 1.4;
+    @include headingFont;
+}
+
+h1 {
+    margin-bottom: 0.5em;
+    @include font-size(34);
+}

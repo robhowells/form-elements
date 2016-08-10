@@ -1,0 +1,56 @@
+/*========================================
+
+    Mixins
+    _____________
+
+
+========================================*/  
+
+/*========================================
+
+	Cross Browser Opacity
+
+========================================*/
+
+@mixin opacity($trans) {
+	filter: alpha(opactiy=($trans * 100));
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$trans * 100})";
+	-moz-opacity: $trans;
+	-khtml-opacity: $trans;
+	opacity: $trans;
+}
+
+/*========================================
+
+	REM Cross Browser Font Size 
+	Calculator
+
+========================================*/
+
+@mixin font-size($sizeValue: 1.6) {
+	font-size: ($sizeValue * 1) + px;
+	font-size: ($sizeValue / 10) + rem;
+}
+
+/*========================================
+
+    Placeholder
+
+========================================*/
+
+@mixin placeholder {
+	&::-webkit-input-placeholder {@content}
+	&:-moz-placeholder           {@content}
+	&::-moz-placeholder          {@content}
+	&:-ms-input-placeholder      {@content}  
+}
+
+/*========================================
+
+  Transitions and animations
+
+========================================*/
+
+@mixin transition {
+  transition: all 0.2s;
+}
