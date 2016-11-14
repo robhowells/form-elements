@@ -1,8 +1,17 @@
 /*========================================
 
+	Base Styles
+	_____________
+
+========================================*/
+
+/*========================================
+
 	Reset
 
 ========================================*/
+
+// sass-lint:disable-block single-line-per-selector
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -16,10 +25,13 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video{
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
+	border: 0;
 }
+
+// sass-lint:enable-block single-line-per-selector
 
 /*========================================
 
@@ -27,20 +39,15 @@ time, mark, audio, video{
 
 ========================================*/
 
-.clearfix:before,
-.clearfix:after {
-	content: " "; /* 1 */
+.clearfix
+&::before,
+&::after {
+	content: ''; /* 1 */
 	display: table; /* 2 */
+	&::after {
+		clear: both;
+	}
 }
-
-.clearfix:after {
-	clear: both;
-}
-
-.clearfix {
-	*zoom: 1;
-}
-
 /*========================================
 
 	Box Layout
@@ -49,12 +56,6 @@ time, mark, audio, video{
 
 * {
 	box-sizing: border-box;
-	*behavior: url("../scripts/boxsizing.htc");
-}
-
-.container {
-	margin-left: auto;
-	margin-right: auto;
 }
 
 /*========================================
@@ -65,9 +66,32 @@ time, mark, audio, video{
 
 img {
 	height: auto;
+	display: block;
 	max-width: 100%;
 }
 
-nav ul {
-	list-style: none;
+nav {
+	ul {
+		list-style: none;
+	}
+}
+
+/*========================================
+
+	Font Rendering
+
+========================================*/
+
+* {
+	font-smoothing: antialiased grayscale;
+}
+
+/*========================================
+
+    Set the base font size to 10
+        
+========================================*/
+
+html, body {
+	font-size: 62.5%;
 }

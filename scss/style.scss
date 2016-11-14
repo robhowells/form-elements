@@ -1,7 +1,7 @@
 /*========================================
 
-    Sass Partials
-    _____________
+	Sass Partials
+	_____________
 
 
 ========================================*/  
@@ -14,6 +14,7 @@
 
 	@import "base/normalize";
 	@import "base/base";
+	@import "base/grid";
 
 /*========================================
 
@@ -24,6 +25,7 @@
 	@import "global/mixins";
 	@import "global/colors";
 	@import "global/typography";
+	@import "global/helpers";
 
 /*========================================
 
@@ -35,7 +37,7 @@
 		Component Styles
 	========================================*/ 
 	
-	@import "layout/components/formElements";
+	@import "layout/components/form-elements";
 
 	/*========================================
 		Main Styles

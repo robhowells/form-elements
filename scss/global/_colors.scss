@@ -12,8 +12,8 @@
 
 ========================================*/
 
-$whiteDefault: #ffffff;
-$blackDefault: #000000; 
+$white-default:  #fff;
+$black-default:  #000;
 
 /*========================================
 
@@ -21,14 +21,18 @@ $blackDefault: #000000;
 
 ========================================*/
 
-$primary: 		#2a2b2f; 
-$secondary: 	#efefef; 
-$error:         #FFBABA;
+$primary:       #2a2b2f;
+$secondary:     #efefef;
+$grey:          #333;
+$error:			#f00;
 
 /*========================================
 
-    Colour Variations
+	Colour Variations
 
 ========================================*/
 
-$secondaryVariation1:     #f2f2f2; 
+$grey-variation-1:		#dad8d9;
+$grey-variation-2:		#d7d7d7;
+$grey-variation-3:		#f9f9f9;
+$grey-variation-4:		#f4f4f4;
