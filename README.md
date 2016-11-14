@@ -1,10 +1,10 @@
 #Form elements
 Base styling for the following form elements:
 
-- Text field
-- Text field with placeholder
+- Text input
+- Text input with placeholder
 - Dropdown
-- Text area
-- Radio buttons
-- Checkboxes
 - Custom radio buttons
+- Custom checkboxes
+- Custom radio buttons
+- Text area
