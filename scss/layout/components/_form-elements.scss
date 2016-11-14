@@ -130,7 +130,6 @@ legend {
 
 ========================================*/
 
-textarea,
 input {
     &[type='text'],
     &[type='password'],
@@ -145,9 +144,19 @@ input {
     }
 }
 
+/*========================================
+
+    Text Area Styles
+
+========================================*/
+
 textarea {
+    @extend %form-field;
     resize: vertical;
     min-height: 160px;
+    &.error {
+        @extend %form-error;
+    }
 }
 
 /*========================================

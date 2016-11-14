@@ -875,13 +875,7 @@ h1 {
     Generic Form Field Styles
 
 ========================================*/
-textarea[type='text'], textarea[type='password'], textarea[type='number'], textarea[type='email'], textarea[type='tel'], textarea[type='file'],
-input[type='text'],
-input[type='password'],
-input[type='number'],
-input[type='email'],
-input[type='tel'],
-input[type='file'], select {
+input[type='text'], input[type='password'], input[type='number'], input[type='email'], input[type='tel'], input[type='file'], textarea, select {
   margin: 0;
   width: 100%;
   color: #333;
@@ -898,56 +892,20 @@ input[type='file'], select {
   font-size: 1.4rem;
   border: 1px solid #dad8d9; }
   @media (max-width: 1200px) {
-    textarea[type='text'], textarea[type='password'], textarea[type='number'], textarea[type='email'], textarea[type='tel'], textarea[type='file'],
-    input[type='text'],
-    input[type='password'],
-    input[type='number'],
-    input[type='email'],
-    input[type='tel'],
-    input[type='file'], select {
+    input[type='text'], input[type='password'], input[type='number'], input[type='email'], input[type='tel'], input[type='file'], textarea, select {
       font-size: 13px;
       font-size: 1.3rem; } }
   @media (max-width: 760px) {
-    textarea[type='text'], textarea[type='password'], textarea[type='number'], textarea[type='email'], textarea[type='tel'], textarea[type='file'],
-    input[type='text'],
-    input[type='password'],
-    input[type='number'],
-    input[type='email'],
-    input[type='tel'],
-    input[type='file'], select {
+    input[type='text'], input[type='password'], input[type='number'], input[type='email'], input[type='tel'], input[type='file'], textarea, select {
       font-size: 12px;
       font-size: 1.2rem; } }
-  textarea[type='text']::-webkit-input-placeholder, textarea[type='password']::-webkit-input-placeholder, textarea[type='number']::-webkit-input-placeholder, textarea[type='email']::-webkit-input-placeholder, textarea[type='tel']::-webkit-input-placeholder, textarea[type='file']::-webkit-input-placeholder,
-  input[type='text']::-webkit-input-placeholder,
-  input[type='password']::-webkit-input-placeholder,
-  input[type='number']::-webkit-input-placeholder,
-  input[type='email']::-webkit-input-placeholder,
-  input[type='tel']::-webkit-input-placeholder,
-  input[type='file']::-webkit-input-placeholder, select::-webkit-input-placeholder {
+  input[type='text']::-webkit-input-placeholder, input[type='password']::-webkit-input-placeholder, input[type='number']::-webkit-input-placeholder, input[type='email']::-webkit-input-placeholder, input[type='tel']::-webkit-input-placeholder, input[type='file']::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
     color: #333; }
-  textarea[type='text']:-moz-placeholder, textarea[type='password']:-moz-placeholder, textarea[type='number']:-moz-placeholder, textarea[type='email']:-moz-placeholder, textarea[type='tel']:-moz-placeholder, textarea[type='file']:-moz-placeholder,
-  input[type='text']:-moz-placeholder,
-  input[type='password']:-moz-placeholder,
-  input[type='number']:-moz-placeholder,
-  input[type='email']:-moz-placeholder,
-  input[type='tel']:-moz-placeholder,
-  input[type='file']:-moz-placeholder, select:-moz-placeholder {
+  input[type='text']:-moz-placeholder, input[type='password']:-moz-placeholder, input[type='number']:-moz-placeholder, input[type='email']:-moz-placeholder, input[type='tel']:-moz-placeholder, input[type='file']:-moz-placeholder, textarea:-moz-placeholder, select:-moz-placeholder {
     color: #333; }
-  textarea[type='text']::-moz-placeholder, textarea[type='password']::-moz-placeholder, textarea[type='number']::-moz-placeholder, textarea[type='email']::-moz-placeholder, textarea[type='tel']::-moz-placeholder, textarea[type='file']::-moz-placeholder,
-  input[type='text']::-moz-placeholder,
-  input[type='password']::-moz-placeholder,
-  input[type='number']::-moz-placeholder,
-  input[type='email']::-moz-placeholder,
-  input[type='tel']::-moz-placeholder,
-  input[type='file']::-moz-placeholder, select::-moz-placeholder {
+  input[type='text']::-moz-placeholder, input[type='password']::-moz-placeholder, input[type='number']::-moz-placeholder, input[type='email']::-moz-placeholder, input[type='tel']::-moz-placeholder, input[type='file']::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
     color: #333; }
-  textarea[type='text']:-ms-input-placeholder, textarea[type='password']:-ms-input-placeholder, textarea[type='number']:-ms-input-placeholder, textarea[type='email']:-ms-input-placeholder, textarea[type='tel']:-ms-input-placeholder, textarea[type='file']:-ms-input-placeholder,
-  input[type='text']:-ms-input-placeholder,
-  input[type='password']:-ms-input-placeholder,
-  input[type='number']:-ms-input-placeholder,
-  input[type='email']:-ms-input-placeholder,
-  input[type='tel']:-ms-input-placeholder,
-  input[type='file']:-ms-input-placeholder, select:-ms-input-placeholder {
+  input[type='text']:-ms-input-placeholder, input[type='password']:-ms-input-placeholder, input[type='number']:-ms-input-placeholder, input[type='email']:-ms-input-placeholder, input[type='tel']:-ms-input-placeholder, input[type='file']:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
     color: #333; }
 
 /*========================================
@@ -955,21 +913,9 @@ input[type='file'], select {
     Error Form Field Styles
 
 ========================================*/
-textarea[type='text'].error, textarea[type='password'].error, textarea[type='number'].error, textarea[type='email'].error, textarea[type='tel'].error, textarea[type='file'].error,
-input[type='text'].error,
-input[type='password'].error,
-input[type='number'].error,
-input[type='email'].error,
-input[type='tel'].error,
-input[type='file'].error, select.error {
+input[type='text'].error, input[type='password'].error, input[type='number'].error, input[type='email'].error, input[type='tel'].error, input[type='file'].error, textarea.error, select.error {
   border-color: #f00; }
-  textarea[type='text'].error + label, textarea[type='password'].error + label, textarea[type='number'].error + label, textarea[type='email'].error + label, textarea[type='tel'].error + label, textarea[type='file'].error + label,
-  input[type='text'].error + label,
-  input[type='password'].error + label,
-  input[type='number'].error + label,
-  input[type='email'].error + label,
-  input[type='tel'].error + label,
-  input[type='file'].error + label, select.error + label {
+  input[type='text'].error + label, input[type='password'].error + label, input[type='number'].error + label, input[type='email'].error + label, input[type='tel'].error + label, input[type='file'].error + label, textarea.error + label, select.error + label {
     margin: 0;
     color: #f00;
     padding: 7px 0 0; }
@@ -1035,6 +981,11 @@ legend {
 /*========================================
 
     Input Styles
+
+========================================*/
+/*========================================
+
+    Text Area Styles
 
 ========================================*/
 textarea {
