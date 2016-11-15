@@ -33,299 +33,326 @@
 	        </div>
 	        <div class="container row mb">
 	            <div class="seven six-tablet columns nmm">
-	                <div class="section-padded-box-sm">
-	                    <fieldset>
-	                        <legend>Text inputs</legend>
-	                        <div class="form-row negative-row">
-	                            <div class="ten columns">
-	                                <label for="text-input-one">Text input</label> 
-	                                <div class="input-wrapper">
-	                                    <input type="text" id="text-input-one" name="text-input-one">
-	                                </div>
-	                            </div>
-	                        </div>   
-	                        <div class="form-row negative-row">
-	                            <div class="ten columns">
-	                                <label for="text-input-two" class="text-hidden">Text input hidden label</label> 
-	                                <div class="input-wrapper">
-	                                    <input type="text" id="text-input-two" name="text-input-two" placeholder="Text input with hidden label">
-	                                </div>
-	                            </div>
-	                        </div>    
-	                        <div class="form-row negative-row">
-	                            <div class="ten columns">
-	                                <label for="text-input-three" class="required-label">Text input w/ error</label> 
-	                                <div class="input-wrapper error">
-	                                    <input type="text" id="text-input-three" name="text-input-three" class="error" required>
-	                                    <label class="error">This field is required.</label>
-	                                </div>
-	                            </div>
-	                        </div>
-	                        <div class="form-row negative-row">
-	                            <div class="four columns">
-	                                <label for="text-input-four" class="adjacent-label">Adjacent text input</label> 
-	                            </div>
-	                            <div class="six columns">
-	                                <div class="input-wrapper">
-	                                    <input type="text" id="text-input-four" name="text-input-four">
-	                                </div>
-	                            </div>
-	                        </div>
-	                        <div class="form-row negative-row">
-	                            <div class="four columns">
-	                                <label for="text-input-five" class="adjacent-label">Half width text input</label> 
-	                            </div>
-	                            <div class="three columns">
-	                                <div class="input-wrapper">
-	                                    <input type="text" id="text-input-five" name="text-input-five">
-	                                </div>
-	                            </div>
-	                        </div> 
-	                        <div class="form-row negative-row">
-	                            <div class="four columns">
-	                                 <p class="dummy-label adjacent-label">Three column input</p>
-	                            </div>
-	                            <div class="six columns">
-	                                <div class="custom-col three-col-input">
-	                                    <label for="text-input-six" class="text-hidden">Date of birth day (DD)</label>
-	                                    <div class="input-wrapper">
-	                                        <input type="number" id="text-input-six" name="text-input-six" placeholder="DD" min="0" max="31">
-	                                    </div>
-	                                </div>
-	                                <div class="custom-col three-col-input">
-	                                    <label for="text-input-seven" class="text-hidden">Date of birth month (MM)</label>
-	                                    <div class="input-wrapper">
-	                                        <input type="number" id="text-input-seven" name="text-input-seven" placeholder="MM" min="0" max="12">
-	                                    </div>
-	                                </div>
-	                                <div class="custom-col three-col-input">
-	                                    <label for="text-input-eight" class="text-hidden">Date of birth year (YYYY)</label>
-	                                    <div class="input-wrapper">
-	                                        <input type="number" id="text-input-eight" name="text-input-eight" placeholder="YYYY" min="1900" max="2016">
-	                                    </div>
-	                                </div>
-	                            </div>
-	                        </div>
-	                        <div class="form-row negative-row">
-	                            <div class="four columns">
-	                                 <p class="dummy-label adjacent-label required-label">Three column input w/ error</p>
-	                            </div>
-	                            <div class="six columns">
-	                                <div class="custom-col three-col-input">
-	                                    <label for="text-input-six" class="text-hidden">Date of birth day (DD)</label>
-	                                    <div class="input-wrapper error">
-	                                        <input type="number" id="text-input-six" name="text-input-six" placeholder="DD" min="0" max="31" required class="error">
-	                                        <label class="error">This field is required.</label>
-	                                    </div>
-	                                </div>
-	                                <div class="custom-col three-col-input">
-	                                    <label for="text-input-seven" class="text-hidden">Date of birth month (MM)</label>
-	                                    <div class="input-wrapper error">
-	                                        <input type="number" id="text-input-seven" name="text-input-seven" placeholder="MM" min="0" max="12" required class="error">
-	                                        <label class="error">This field is required.</label>
-	                                    </div>
-	                                </div>
-	                                <div class="custom-col three-col-input">
-	                                    <label for="text-input-eight" class="text-hidden">Date of birth year (YYYY)</label>
-	                                    <div class="input-wrapper error">
-	                                        <input type="number" id="text-input-eight" name="text-input-eight" placeholder="YYYY" min="1900" max="2016" required class="error">
-	                                        <label class="error">This field is required.</label>
-	                                    </div>
-	                                </div>
-	                            </div>
-	                        </div>
-	                    </fieldset>
-	                </div>
-	                <div class="section-padded-box-sm bg-grey-variation-3">
-	                    <fieldset>
-	                        <legend>Select inputs</legend>
-	                        <div class="form-row negative-row">
-	                            <div class="ten columns">
-	                                <label for="select-input-one">Select input</label> 
-	                                <div class="input-wrapper styled-dropdown">
-	                                    <select id="select-input-one" name="select-input-one">
-	                                        <option value="" selected disabled>Please select</option>
-	                                        <option value="one">One</option>
-	                                    </select>
-	                                </div>
-	                            </div>
-	                        </div> 
-	                        <div class="form-row negative-row">
-	                            <div class="ten columns">
-	                                <label for="select-input-two" class="required-label">Select input w/ error</label> 
-	                                <div class="input-wrapper styled-dropdown error">
-	                                    <select id="select-input-two" name="select-input-two" class="error" required>
-	                                        <option value="" selected disabled>Please select</option>
-	                                        <option value="one">One</option>
-	                                    </select>
-	                                    <label class="error">This field is required.</label>
-	                                </div>
-	                            </div>
-	                        </div>
-	                        <div class="form-row negative-row">
-	                            <div class="four columns">
-	                                <label for="select-input-three" class="adjacent-label">Adjacent select input</label> 
-	                            </div>
-	                            <div class="six columns">
-	                                <div class="input-wrapper styled-dropdown">
-	                                    <select id="select-input-three" name="select-input-three">
-	                                        <option value="" selected disabled>Please select</option>
-	                                        <option value="one">One</option>
-	                                    </select>
-	                                </div>
-	                            </div>
-	                        </div> 
-	                        <div class="form-row negative-row">
-	                            <div class="four columns">
-	                                <label for="select-input-four" class="adjacent-label">Half width select input</label> 
-	                            </div>
-	                            <div class="three columns">
-	                                <div class="input-wrapper styled-dropdown">
-	                                    <select id="select-input-four" name="select-input-four">
-	                                        <option value="" selected disabled>Please select</option>
-	                                        <option value="one">One</option>
-	                                    </select>
-	                                </div>
-	                            </div>
-	                        </div>    
-	                    </fieldset>
-	                </div>
-	                <div class="section-padded-box-sm bg-grey-variation-3">
-	                    <fieldset>
-	                        <legend>Radio button inputs</legend>
-	                        <div class="form-row negative-row">
-	                            <div class="four columns">
-	                                 <p class="dummy-label adjacent-label">Radio button input</p>
-	                            </div>
-	                            <div class="six columns">
-	                                <div class="custom-col two-col-input">
-	                                    <div class="input-wrapper radio-wrapper">
-	                                        <input type="radio" id="radio-input-one" name="radio-input" class="radio-btn-input">
-	                                        <label for="radio-input-one" class="radio-btn-label">Option one</label>
-	                                    </div>
-	                                </div>
-	                                <div class="custom-col two-col-input">
-	                                    <div class="input-wrapper radio-wrapper">
-	                                        <input type="radio" id="radio-input-two" name="radio-input" class="radio-btn-input">
-	                                        <label for="radio-input-two" class="radio-btn-label">Option two</label>
-	                                    </div>
-	                                </div>
-	                                <div class="custom-col two-col-input">
-	                                    <div class="input-wrapper radio-wrapper">
-	                                        <input type="radio" id="radio-input-three" name="radio-input" class="radio-btn-input">
-	                                        <label for="radio-input-three" class="radio-btn-label">Option three</label>
-	                                    </div>
-	                                </div>
-	                            </div>
-	                        </div>   
-	                        <div class="form-row negative-row">
-	                            <div class="four columns">
-	                                 <p class="dummy-label adjacent-label required-label">Radio button input w/ error</p>
-	                            </div>
-	                            <div class="six columns">
-	                                <div class="custom-col two-col-input">
-	                                    <div class="input-wrapper radio-wrapper error">
-	                                        <input type="radio" id="radio-input-four" name="radio-input-with-error" class="radio-btn-input error" required>
-	                                        <label for="radio-input-four" class="radio-btn-label">Option one</label>
-	                                        <label class="error">This field is required.</label>
-	                                    </div>
-	                                </div>
-	                                <div class="custom-col two-col-input">
-	                                    <div class="input-wrapper radio-wrapper error">
-	                                        <input type="radio" id="radio-input-five" name="radio-input-with-error" class="radio-btn-input error" required>
-	                                        <label for="radio-input-five" class="radio-btn-label">Option two</label>
-	                                        <label class="error">This field is required.</label>
-	                                    </div>
-	                                </div>
-	                                <div class="custom-col two-col-input">
-	                                    <div class="input-wrapper radio-wrapper error">
-	                                        <input type="radio" id="radio-input-six" name="radio-input-with-error" class="radio-btn-input error" required>
-	                                        <label for="radio-input-six" class="radio-btn-label">Option three</label>
-	                                        <label class="error">This field is required.</label>
-	                                    </div>
-	                                </div>
-	                            </div>
-	                        </div> 
-	                    </fieldset>
-	                </div>
-	                <div class="section-padded-box-sm bg-grey-variation-3">
-	                    <fieldset>
-	                        <legend>Checkbox inputs</legend>
-	                        <div class="form-row negative-row">
-	                            <div class="four columns">
-	                                 <p class="dummy-label adjacent-label">Checkbox input</p>
-	                            </div>
-	                            <div class="six columns">
-	                                <div class="custom-col two-col-input">
-	                                    <div class="input-wrapper checkbox-wrapper">
-	                                        <input type="checkbox" id="checkbox-input-one" name="checkbox-input" class="checkbox-input">
-	                                        <label for="checkbox-input-one" class="checkbox-label">Option one</label>
-	                                    </div>
-	                                </div>
-	                                <div class="custom-col two-col-input">
-	                                    <div class="input-wrapper checkbox-wrapper">
-	                                        <input type="checkbox" id="checkbox-input-two" name="checkbox-input" class="checkbox-input">
-	                                        <label for="checkbox-input-two" class="checkbox-label">Option two</label>
-	                                    </div>
-	                                </div>
-	                                <div class="custom-col two-col-input">
-	                                    <div class="input-wrapper checkbox-wrapper">
-	                                        <input type="checkbox" id="checkbox-input-three" name="checkbox-input" class="checkbox-input">
-	                                        <label for="checkbox-input-three" class="checkbox-label">Option three</label>
-	                                    </div>
-	                                </div>
-	                            </div>
-	                        </div>
-	                        <div class="form-row negative-row">
-	                            <div class="four columns">
-	                                 <p class="dummy-label adjacent-label required-label">Checkbox input w/ error</p>
-	                            </div>
-	                            <div class="six columns">
-	                                <div class="custom-col two-col-input">
-	                                    <div class="input-wrapper checkbox-wrapper error">
-	                                        <input type="checkbox" id="checkbox-input-four" name="checkbox-input-with-error" class="checkbox-input error" required>
-	                                        <label for="checkbox-input-four" class="checkbox-label">Option one</label>
-	                                        <label class="error">This field is required.</label>
-	                                    </div>
-	                                </div>
-	                                <div class="custom-col two-col-input">
-	                                    <div class="input-wrapper checkbox-wrapper error">
-	                                        <input type="checkbox" id="checkbox-input-five" name="checkbox-input-with-error" class="checkbox-input error" required>
-	                                        <label for="checkbox-input-five" class="checkbox-label">Option two</label>
-	                                        <label class="error">This field is required.</label>
-	                                    </div>
-	                                </div>
-	                                <div class="custom-col two-col-input">
-	                                    <div class="input-wrapper checkbox-wrapper error">
-	                                        <input type="checkbox" id="checkbox-input-six" name="checkbox-input-with-error" class="checkbox-input error" required>
-	                                        <label for="checkbox-input-six" class="checkbox-label">Option three</label>
-	                                        <label class="error">This field is required.</label>
-	                                    </div>
-	                                </div>
-	                            </div>
-	                        </div>   
-	                        <div class="form-row negative-row">
-	                            <div class="ten columns">
-	                                 <p class="dummy-label adjacent-label">Full width checkbox input</p>
-	                                <div class="input-wrapper checkbox-wrapper">
-	                                    <input type="checkbox" id="checkbox-input-seven" name="checkbox-input-full-width" class="checkbox-input">
-	                                    <label for="checkbox-input-seven" class="checkbox-label">I confirm that I have read and agreed to the Online Dealing Agreement and mfldirect Approved Condition Standards</label>
-	                                </div>
-	                            </div>
-	                        </div>
-	                        <div class="form-row negative-row">
-	                            <div class="ten columns">
-	                                 <p class="dummy-label adjacent-label">Full width checkbox input w/ error</p>
-	                                <div class="input-wrapper checkbox-wrapper error">
-	                                    <input type="checkbox" id="checkbox-input-eight" name="checkbox-input-full-width-error" class="checkbox-input error">
-	                                    <label for="checkbox-input-eight" class="checkbox-label">I confirm that I have read and agreed to the Online Dealing Agreement and mfldirect Approved Condition Standards</label>
-	                                    <label class="error">This field is required.</label>
-	                                </div>
-	                            </div>
-	                        </div>
-	                    </fieldset>
-	                </div>
-	                <div class="section-padded-box-sm bg-grey-variation-3">
+	                
+	                <!--Text inputs -->
+                    <div class="form-section section-padded-box-sm bg-grey-variation-3 mb25">
+                        <fieldset class="form-subsection">
+                            <legend>Full width text inputs</legend>
+                            <div class="form-row negative-row">
+                                <div class="ten columns">
+                                    <label for="text-input-one">Text input</label> 
+                                    <div class="input-wrapper">
+                                        <input type="text" id="text-input-one" name="text-input-one">
+                                    </div>
+                                </div>
+                            </div>   
+                            <div class="form-row negative-row">
+                                <div class="ten columns">
+                                    <label for="text-input-two" class="text-hidden">Text input hidden label</label> 
+                                    <div class="input-wrapper">
+                                        <input type="text" id="text-input-two" name="text-input-two" placeholder="Text input with hidden label">
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="form-row negative-row">
+                                <div class="ten columns">
+                                    <label for="text-input-three" class="required-label">Text input w/ error</label> 
+                                    <div class="input-wrapper error">
+                                        <input type="text" id="text-input-three" name="text-input-three" class="error" required>
+                                        <label class="error">This field is required.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form-subsection">
+                            <legend>Adjacent text inputs</legend>
+                            <div class="form-row negative-row">
+                                <div class="four columns">
+                                    <label for="text-input-four" class="adjacent-label">Adjacent text input</label> 
+                                </div>
+                                <div class="six columns">
+                                    <div class="input-wrapper">
+                                        <input type="text" id="text-input-four" name="text-input-four">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row negative-row">
+                                <div class="four columns">
+                                    <label for="text-input-five" class="adjacent-label">Half width text input</label> 
+                                </div>
+                                <div class="three columns">
+                                    <div class="input-wrapper">
+                                        <input type="text" id="text-input-five" name="text-input-five">
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="form-row negative-row">
+                                <div class="four columns">
+                                     <p class="dummy-label adjacent-label">Three column input</p>
+                                </div>
+                                <div class="six columns">
+                                    <div class="custom-col three-col-input">
+                                        <label for="text-input-six" class="text-hidden">Date of birth day (DD)</label>
+                                        <div class="input-wrapper">
+                                            <input type="number" id="text-input-six" name="text-input-six" placeholder="DD" min="0" max="31">
+                                        </div>
+                                    </div>
+                                    <div class="custom-col three-col-input">
+                                        <label for="text-input-seven" class="text-hidden">Date of birth month (MM)</label>
+                                        <div class="input-wrapper">
+                                            <input type="number" id="text-input-seven" name="text-input-seven" placeholder="MM" min="0" max="12">
+                                        </div>
+                                    </div>
+                                    <div class="custom-col three-col-input">
+                                        <label for="text-input-eight" class="text-hidden">Date of birth year (YYYY)</label>
+                                        <div class="input-wrapper">
+                                            <input type="number" id="text-input-eight" name="text-input-eight" placeholder="YYYY" min="1900" max="2016">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row negative-row">
+                                <div class="four columns">
+                                     <p class="dummy-label adjacent-label required-label">Three column input w/ error</p>
+                                </div>
+                                <div class="six columns">
+                                    <div class="custom-col three-col-input">
+                                        <label for="text-input-nine" class="text-hidden">Date of birth day (DD)</label>
+                                        <div class="input-wrapper error">
+                                            <input type="number" id="text-input-nine" name="text-input-nine" placeholder="DD" min="0" max="31" required class="error">
+                                            <label class="error">This field is required.</label>
+                                        </div>
+                                    </div>
+                                    <div class="custom-col three-col-input">
+                                        <label for="text-input-ten" class="text-hidden">Date of birth month (MM)</label>
+                                        <div class="input-wrapper error">
+                                            <input type="number" id="text-input-ten" name="text-input-ten" placeholder="MM" min="0" max="12" required class="error">
+                                            <label class="error">This field is required.</label>
+                                        </div>
+                                    </div>
+                                    <div class="custom-col three-col-input">
+                                        <label for="text-input-eleven" class="text-hidden">Date of birth year (YYYY)</label>
+                                        <div class="input-wrapper error">
+                                            <input type="number" id="text-input-eleven" name="text-input-eleven" placeholder="YYYY" min="1900" max="2016" required class="error">
+                                            <label class="error">This field is required.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div><!--./Text inputs -->
+
+                    <!--Select inputs -->
+                    <div class="form-section section-padded-box-sm bg-grey-variation-3 mb25">
+                        <fieldset class="form-subsection">
+                            <legend>Full width select inputs</legend>
+                            <div class="form-row negative-row">
+                                <div class="ten columns">
+                                    <label for="select-input-one">Select input</label> 
+                                    <div class="input-wrapper styled-dropdown">
+                                        <select id="select-input-one" name="select-input-one">
+                                            <option value="" selected disabled>Please select</option>
+                                            <option value="one">One</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="form-row negative-row">
+                                <div class="ten columns">
+                                    <label for="select-input-two" class="required-label">Select input w/ error</label> 
+                                    <div class="input-wrapper styled-dropdown error">
+                                        <select id="select-input-two" name="select-input-two" class="error" required>
+                                            <option value="" selected disabled>Please select</option>
+                                            <option value="one">One</option>
+                                        </select>
+                                        <label class="error">This field is required.</label>
+                                    </div>
+                                </div>
+                            </div>  
+                        </fieldset>
+                        <fieldset class="form-subsection">
+                            <legend>Adjacent select inputs</legend>
+                            <div class="form-row negative-row">
+                                <div class="four columns">
+                                    <label for="select-input-three" class="adjacent-label">Adjacent select input</label> 
+                                </div>
+                                <div class="six columns">
+                                    <div class="input-wrapper styled-dropdown">
+                                        <select id="select-input-three" name="select-input-three">
+                                            <option value="" selected disabled>Please select</option>
+                                            <option value="one">One</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="form-row negative-row">
+                                <div class="four columns">
+                                    <label for="select-input-four" class="adjacent-label">Half width select input</label> 
+                                </div>
+                                <div class="three columns">
+                                    <div class="input-wrapper styled-dropdown">
+                                        <select id="select-input-four" name="select-input-four">
+                                            <option value="" selected disabled>Please select</option>
+                                            <option value="one">One</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>    
+                        </fieldset>
+                    </div>
+                    <!--./Select inputs -->
+                    
+                    <!--Radio buttons -->
+                    <div class="form-section section-padded-box-sm bg-grey-variation-3 mb25">
+                        <fieldset class="form-subsection">
+                            <legend>Radio button inputs</legend>
+                            <div class="form-row negative-row">
+                                <div class="four columns">
+                                     <p class="dummy-label adjacent-label">Radio button input</p>
+                                </div>
+                                <div class="six columns">
+                                    <fieldset>
+                                        <legend class="text-hidden">Radio button input</legend>
+                                        <div class="custom-col two-col-input">
+                                            <div class="input-wrapper radio-wrapper">
+                                                <input type="radio" id="radio-input-one" name="radio-input" class="radio-btn-input">
+                                                <label for="radio-input-one" class="radio-btn-label">Option one</label>
+                                            </div>
+                                        </div>
+                                        <div class="custom-col two-col-input">
+                                            <div class="input-wrapper radio-wrapper">
+                                                <input type="radio" id="radio-input-two" name="radio-input" class="radio-btn-input">
+                                                <label for="radio-input-two" class="radio-btn-label">Option two</label>
+                                            </div>
+                                        </div>
+                                        <div class="custom-col two-col-input">
+                                            <div class="input-wrapper radio-wrapper">
+                                                <input type="radio" id="radio-input-three" name="radio-input" class="radio-btn-input">
+                                                <label for="radio-input-three" class="radio-btn-label">Option three</label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>   
+                            <div class="form-row negative-row">
+                                <div class="four columns">
+                                     <p class="dummy-label adjacent-label required-label">Radio button input w/ error</p>
+                                </div>
+                                <div class="six columns">
+                                    <fieldset>
+                                        <legend class="text-hidden">Radio button input w/ error</legend>
+                                        <div class="custom-col two-col-input">
+                                            <div class="input-wrapper radio-wrapper error">
+                                                <input type="radio" id="radio-input-four" name="radio-input-with-error" class="radio-btn-input error" required>
+                                                <label for="radio-input-four" class="radio-btn-label">Option one</label>
+                                                <label class="error">This field is required.</label>
+                                            </div>
+                                        </div>
+                                        <div class="custom-col two-col-input">
+                                            <div class="input-wrapper radio-wrapper">
+                                                <input type="radio" id="radio-input-five" name="radio-input-with-error" class="radio-btn-input" required>
+                                                <label for="radio-input-five" class="radio-btn-label">Option two</label>
+                                            </div>
+                                        </div>
+                                        <div class="custom-col two-col-input">
+                                            <div class="input-wrapper radio-wrapper">
+                                                <input type="radio" id="radio-input-six" name="radio-input-with-error" class="radio-btn-input" required>
+                                                <label for="radio-input-six" class="radio-btn-label">Option three</label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div> 
+                        </fieldset>
+                    </div>
+                    <!--./Radio buttons -->
+
+                    <!--Checkbox inputs -->
+                    <div class="form-section section-padded-box-sm bg-grey-variation-3 mb25">
+                        <fieldset class="form-subsection">
+                            <legend>Checkbox inputs</legend>
+                            <div class="form-row negative-row">
+                                <div class="four columns">
+                                     <p class="dummy-label adjacent-label">Checkbox input</p>
+                                </div>
+                                <div class="six columns">
+                                    <fieldset>
+                                        <legend class="text-hidden">Checkbox input</legend>
+                                        <div class="custom-col two-col-input">
+                                            <div class="input-wrapper checkbox-wrapper">
+                                                <input type="checkbox" id="checkbox-input-one" name="checkbox-input" class="checkbox-input">
+                                                <label for="checkbox-input-one" class="checkbox-label">Option one</label>
+                                            </div>
+                                        </div>
+                                        <div class="custom-col two-col-input">
+                                            <div class="input-wrapper checkbox-wrapper">
+                                                <input type="checkbox" id="checkbox-input-two" name="checkbox-input" class="checkbox-input">
+                                                <label for="checkbox-input-two" class="checkbox-label">Option two</label>
+                                            </div>
+                                        </div>
+                                        <div class="custom-col two-col-input">
+                                            <div class="input-wrapper checkbox-wrapper">
+                                                <input type="checkbox" id="checkbox-input-three" name="checkbox-input" class="checkbox-input">
+                                                <label for="checkbox-input-three" class="checkbox-label">Option three</label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-row negative-row">
+                                <div class="four columns">
+                                     <p class="dummy-label adjacent-label required-label">Checkbox input w/ error</p>
+                                </div>
+                                <div class="six columns">
+                                    <fieldset>
+                                        <legend class="text-hidden">Checkbox input w/ error</legend>
+                                        <div class="custom-col two-col-input">
+                                            <div class="input-wrapper checkbox-wrapper error">
+                                                <input type="checkbox" id="checkbox-input-four" name="checkbox-input-with-error" class="checkbox-input error" required>
+                                                <label for="checkbox-input-four" class="checkbox-label">Option one</label>
+                                                <label class="error">This field is required.</label>
+                                            </div>
+                                        </div>
+                                        <div class="custom-col two-col-input">
+                                            <div class="input-wrapper checkbox-wrapper">
+                                                <input type="checkbox" id="checkbox-input-five" name="checkbox-input-with-error" class="checkbox-input" required>
+                                                <label for="checkbox-input-five" class="checkbox-label">Option two</label>
+                                            </div>
+                                        </div>
+                                        <div class="custom-col two-col-input">
+                                            <div class="input-wrapper checkbox-wrapper">
+                                                <input type="checkbox" id="checkbox-input-six" name="checkbox-input-with-error" class="checkbox-input" required>
+                                                <label for="checkbox-input-six" class="checkbox-label">Option three</label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-row negative-row">
+                                <div class="ten columns">
+                                    <p class="dummy-label adjacent-label text-hidden">Full width checkbox input</p>
+                                    <div class="input-wrapper checkbox-wrapper">
+                                        <input type="checkbox" id="checkbox-input-seven" name="checkbox-input-full-width" class="checkbox-input">
+                                        <label for="checkbox-input-seven" class="checkbox-label">I confirm that I have read and agreed to the Online Dealing Agreement and mfldirect Approved Condition Standards</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row negative-row">
+                                <div class="ten columns">
+                                    <p class="dummy-label adjacent-label text-hidden">Full width checkbox input w/ error</p>
+                                    <div class="input-wrapper checkbox-wrapper error">
+                                        <input type="checkbox" id="checkbox-input-eight" name="checkbox-input-full-width-error" class="checkbox-input error">
+                                        <label for="checkbox-input-eight" class="checkbox-label">I confirm that I have read and agreed to the Online Dealing Agreement and mfldirect Approved Condition Standards</label>
+                                        <label class="error">This field is required.</label>
+                                    </div>
+                                </div>
+                            </div>   
+                        </fieldset>
+                    </div>
+                    <!--./Checkbox inputs -->
+					
+					<!--Textarea block-->
+	                <div class="form-section section-padded-box-sm bg-grey-variation-3 mb25">
 	                    <fieldset>
 	                        <legend>Textarea inputs</legend>
 	                        <div class="form-row negative-row">
@@ -347,9 +374,47 @@
 		                    </div>
 	                    </fieldset>
 	                </div>
+	                <!--./Textarea block-->
+					
+					<!--File upload block-->
+	                <div class="form-section section-padded-box-sm bg-grey-variation-3 mb25">
+                        <fieldset class="form-subsection">
+                            <legend>File upload</legend>
+                            <fieldset>
+                                <legend class="text-hidden">Uploads may be pdf, doc/docx, jpeg, png or gif (max 2MB)</legend>
+                                <div class="form-row negative-row">
+                                    <div class="ten columns">
+                                        <label for="file-input-one" class="required-label">File upload one</label>
+                                        <div class="file-input-wrapper">
+                                            <a href="#" class="btn btn-box-shadow file-input-upload-btn" tabindex="-1">Choose file</a>
+                                            <input type="file" id="file-input-one" name="file-input-one" class="file-input" required>
+                                            <span class="file-input-fake-path">No file chosen</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row negative-row">
+                                    <div class="ten columns">
+                                        <label for="file-input-two" class="required-label">File upload two</label>
+                                        <div class="file-input-wrapper">
+                                            <a href="#" class="btn btn-box-shadow file-input-upload-btn" tabindex="-1">Choose file</a>
+                                            <input type="file" id="file-input-two" name="file-input-two" class="file-input" required>
+                                            <span class="file-input-fake-path">No file chosen</span>
+                                        </div>
+                                    </div>
+                                </div>
+                             </fieldset>
+                        </fieldset>
+                    </div>
+					<!--./File upload block-->
+
 	            </div>
 	        </div>
 	    </section>
 	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="js/dist/js.min.js"></script>
+    <script>
+        formHelper.fileUpload();
+    </script>
 </body>
 </html>

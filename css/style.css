@@ -762,6 +762,11 @@ html, body {
 ========================================*/
 /*========================================
 
+	Focus State
+
+========================================*/
+/*========================================
+
 	Colour Styles
 	_____________
 	
@@ -782,6 +787,71 @@ html, body {
 	Colour Variations
 
 ========================================*/
+/*========================================
+	 
+	Colour Classes
+
+========================================*/
+.bg-primary {
+  background: #2a2b2f; }
+
+.color-primary {
+  color: #2a2b2f; }
+
+.bg-secondary {
+  background: #efefef; }
+
+.color-secondary {
+  color: #efefef; }
+
+.bg-grey {
+  background: #333; }
+
+.color-grey {
+  color: #333; }
+
+.bg-error {
+  background: #f00; }
+
+.color-error {
+  color: #f00; }
+
+.bg-grey-variation-1 {
+  background: #dad8d9; }
+
+.color-grey-variation-1 {
+  color: #dad8d9; }
+
+.bg-grey-variation-2 {
+  background: #d7d7d7; }
+
+.color-grey-variation-2 {
+  color: #d7d7d7; }
+
+.bg-grey-variation-3 {
+  background: #f9f9f9; }
+
+.color-grey-variation-3 {
+  color: #f9f9f9; }
+
+.bg-grey-variation-4 {
+  background: #f4f4f4; }
+
+.color-grey-variation-4 {
+  color: #f4f4f4; }
+
+.bg-white-default {
+  background: #fff; }
+
+.color-white-default {
+  color: #fff; }
+
+.bg-black-default {
+  background: #000; }
+
+.color-black-default {
+  color: #000; }
+
 /*========================================
 
 	Typography Styles
@@ -814,6 +884,9 @@ h1 {
 	
 
 ========================================*/
+.mb25 {
+  margin-bottom: 25px; }
+
 .text-hidden {
   top: auto;
   width: 1px;
@@ -830,6 +903,62 @@ h1 {
 /*========================================
 		Component Styles
 	========================================*/
+/*========================================
+
+	Button Styles
+	_____________
+
+
+========================================*/
+.btn,
+button {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Arial', sans-serif;
+  text-decoration: none;
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-size: 1.6rem; }
+  @media (max-width: 1200px) {
+    .btn,
+    button {
+      font-size: 15px;
+      font-size: 1.5rem; } }
+  @media (max-width: 760px) {
+    .btn,
+    button {
+      font-size: 14px;
+      font-size: 1.4rem; } }
+  @media (max-width: 414px) {
+    .btn,
+    button {
+      font-size: 13px;
+      font-size: 1.3rem; } }
+
+.btn-box-shadow {
+  color: #333;
+  max-width: 135px;
+  padding: 8px 25px;
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  font-size: 1.2rem;
+  background: #fff;
+  box-shadow: 1px 1px 0 2px #2a2b2f; }
+  .btn-box-shadow:hover, .btn-box-shadow:focus {
+    color: #333; }
+  @media (max-width: 414px) {
+    .btn-box-shadow {
+      padding: 5px 15px; } }
+
 /*========================================
 
     Form Element Styles
@@ -1030,10 +1159,12 @@ select {
 
 ========================================*/
 .radio-btn-label, .checkbox-label {
+  margin: 0;
   outline: none;
   cursor: pointer;
   padding: 0 25px;
-  position: relative; }
+  position: relative;
+  z-index: z(default); }
   .radio-btn-label::before, .checkbox-label::before, .radio-btn-label::after, .checkbox-label::after {
     content: '';
     top: 0;
@@ -1060,6 +1191,7 @@ select {
   left: 0;
   width: 100%;
   height: 100%;
+  cursor: pointer;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -1068,12 +1200,13 @@ select {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   -moz-opacity: 0;
   -khtml-opacity: 0;
-  opacity: 0; }
+  opacity: 0;
+  z-index: z(default)1; }
   .error.radio-btn-input ~ label::before, .error.checkbox-input ~ label::before {
     border-color: #f00; }
   .error.radio-btn-input ~ label.error, .error.checkbox-input ~ label.error {
     color: #f00;
-    padding-left: 25px; }
+    margin: 5px 0 0 25px; }
   .radio-btn-input:checked, .checkbox-input:checked {
     outline: none; }
     .radio-btn-input:checked ~ label::after, .checkbox-input:checked ~ label::after {
@@ -1107,8 +1240,8 @@ select {
   height: 10px;
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
-  border-right: 3px solid #454545;
-  border-bottom: 3px solid #454545; }
+  border-right: 3px solid #333;
+  border-bottom: 3px solid #333; }
 
 .checkbox-input:checked ~ label::after {
   -webkit-transform: rotate(45deg) scale(0.9);
@@ -1116,9 +1249,81 @@ select {
 
 /*========================================
 
+    Custom File Input Styles
+
+========================================*/
+.file-input-wrapper {
+  position: relative; }
+
+.file-input {
+  top: 0;
+  width: 100%;
+  font-size: 0;
+  height: 100%;
+  padding: 10px;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  filter: alpha(opactiy=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  z-index: z(default)1; }
+
+.file-input-error-msg {
+  color: #f00; }
+
+.file-input-upload-btn.focus {
+  outline-offset: -2px;
+  outline: 5px auto -webkit-focus-ring-color; }
+
+.file-input-fake-path {
+  top: 10px;
+  left: 140px;
+  position: absolute;
+  font-size: 14px;
+  font-size: 1.4rem; }
+  @media (max-width: 1200px) {
+    .file-input-fake-path {
+      font-size: 13px;
+      font-size: 1.3rem; } }
+  @media (max-width: 760px) {
+    .file-input-fake-path {
+      font-size: 12px;
+      font-size: 1.2rem; } }
+  @media (max-width: 414px) {
+    .file-input-fake-path {
+      left: 0;
+      display: block;
+      position: relative;
+      margin: 0 0 10px; } }
+
+/*========================================
+
     Form Helper Styles
 
 ========================================*/
+fieldset.form-subsection + fieldset.form-subsection {
+  margin-top: 25px; }
+  @media (max-width: 1024px) {
+    fieldset.form-subsection + fieldset.form-subsection {
+      margin-top: 15px; } }
+
+legend {
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-size: 1.6rem; }
+  @media (max-width: 1200px) {
+    legend {
+      font-size: 15px;
+      font-size: 1.5rem; } }
+  @media (max-width: 1024px) {
+    legend {
+      font-size: 14px;
+      font-size: 1.4rem; } }
+
 .custom-col {
   float: left;
   margin-right: 7.5px; }
@@ -1128,6 +1333,21 @@ select {
     width: calc(33.33% - 5px); }
   .custom-col.two-col-input {
     width: calc(50% - 7.5px); }
+    @media (max-width: 768px) {
+      .custom-col.two-col-input {
+        width: 100%; } }
+    @media (max-width: 760px) {
+      .custom-col.two-col-input {
+        width: calc(50% - 7.5px); } }
+    @media (max-width: 414px) {
+      .custom-col.two-col-input {
+        width: 100%; } }
+  @media (max-width: 414px) {
+    .custom-col {
+      width: 100%; } }
+
+.user-group-target {
+  display: none; }
 
 /*========================================
 		Main Styles
@@ -1148,5 +1368,3 @@ select {
   padding: 50px 0; }
   .section-padded-box-sm {
     padding: 25px; }
-    .section-padded-box-sm + .section-padded-box-sm {
-      padding-top: 0; }

@@ -36,3 +36,26 @@ $grey-variation-1:		#dad8d9;
 $grey-variation-2:		#d7d7d7;
 $grey-variation-3:		#f9f9f9;
 $grey-variation-4:		#f4f4f4;
+
+/*========================================
+	 
+	Colour Classes
+
+========================================*/
+
+// sass-lint:disable-block no-color-keywords
+
+$color-list: primary, secondary, grey, error, grey-variation-1, grey-variation-2, grey-variation-3, grey-variation-4, white-default, black-default;
+$color-list-vars: $primary, $secondary, $grey, $error, $grey-variation-1, $grey-variation-2, $grey-variation-3, $grey-variation-4, $white-default, $black-default;
+
+// sass-lint:enable-block no-color-keywords
+
+
+@for $i from 1 through length($color-list) {
+	.bg-#{nth($color-list, $i)} {
+		background: nth($color-list-vars, $i);
+	}
+	.color-#{nth($color-list, $i)} {
+		color: nth($color-list-vars, $i);
+	}
+}

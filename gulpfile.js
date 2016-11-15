@@ -5,9 +5,14 @@ var gulp = require('gulp'),
 	cleanCSS = require('gulp-clean-css'), 
 	concat = require('gulp-concat'),
 	csscomb = require('gulp-csscomb'),
-	sassLint = require('gulp-sass-lint');
+	sassLint = require('gulp-sass-lint'),
+	uglify = require('gulp-uglify');
 
 var paths = {
+	scripts: {
+		src: ['./js/src/vendors/*.js', './js/src/components/*.js', './js/src/*.js'],
+		dist: './js/dist'
+	},
 	sass: {
 		src: './scss/**/*.scss',
 		dist: './css',
@@ -69,8 +74,15 @@ gulp.task('lint:sass', function () {
     .pipe(sassLint.failOnError())
 });
 
+gulp.task('scripts:dev', function() {
+	return gulp.src(paths.scripts.src)
+		.pipe(concat('js.min.js'))
+		.pipe(gulp.dest(paths.scripts.dist)) 
+});
+
 gulp.task('watch', function() {
+	gulp.watch(paths.scripts.src, ['scripts:dev']);
 	gulp.watch(paths.sass.src, ['lint:sass', 'sass:dev']);
 });
 
-gulp.task('build', ['sass:build'], function() {});
+gulp.task('build', ['sass:build', 'scripts:build', 'imagemin'], function() {});

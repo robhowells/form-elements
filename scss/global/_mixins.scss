@@ -66,3 +66,18 @@
 	}
   }
 }
+
+/*========================================
+
+	Focus State
+
+========================================*/
+
+// sass-lint:disable-block no-vendor-prefixes
+
+@mixin focus-state {
+	outline-offset: -2px;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+// sass-lint:enable-block no-vendor-prefixes

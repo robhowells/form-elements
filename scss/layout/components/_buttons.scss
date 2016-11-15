@@ -1,0 +1,41 @@
+/*========================================
+
+	Button Styles
+	_____________
+
+
+========================================*/
+
+.btn,
+button {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	cursor: pointer;
+	overflow: hidden;
+	appearance: none;
+	text-align: center;
+	display: inline-block;
+	@include heading-font;
+	text-decoration: none;
+	background: transparent;
+	text-transform: uppercase;
+	@include rf(normal desktop phablet mobile, 16 15 14 13);
+}
+
+.btn-box-shadow {
+	color: $grey;
+    max-width: 135px;
+	padding: 8px 25px;
+	@include heading-font;
+	@include rf(normal, 12);
+	background: $white-default;
+	box-shadow: 1px 1px 0 2px rgba($primary, 1);
+	&:hover,
+	&:focus {
+		color: $grey;
+	}
+	@include breakpoint(mobile) {
+		padding: 5px 15px;
+	}
+}

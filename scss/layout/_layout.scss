@@ -16,8 +16,5 @@
 	padding: 50px 0;
 	&-box-sm {
 	    padding: 25px;
-	    & + & {
-	    	padding-top: 0;
-	    }
 	}
 }
