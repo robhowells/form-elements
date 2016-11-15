@@ -4,7 +4,7 @@ window.formHelper = (function ($) {
     * Custom file upload setup
     */
 
-    var fileUpload = function() {
+    var fileUpload = function() { 
 
         var file = {
             input: $('.file-input'),

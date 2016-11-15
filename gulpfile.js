@@ -80,9 +80,16 @@ gulp.task('scripts:dev', function() {
 		.pipe(gulp.dest(paths.scripts.dist)) 
 });
 
+gulp.task('scripts:build', function() {
+	return gulp.src(paths.scripts.src)
+		.pipe(concat('js.min.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest(paths.scripts.dist))
+});
+
 gulp.task('watch', function() {
 	gulp.watch(paths.scripts.src, ['scripts:dev']);
 	gulp.watch(paths.sass.src, ['lint:sass', 'sass:dev']);
 });
 
-gulp.task('build', ['sass:build', 'scripts:build', 'imagemin'], function() {});
+gulp.task('build', ['sass:build', 'scripts:build'], function() {});
