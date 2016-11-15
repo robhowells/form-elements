@@ -1,5 +1,5 @@
 #Form elements
-Base styling for the following form elements:
+Base markup and styling for the following form elements:
 
 - Text input
 - Text input with placeholder
@@ -8,3 +8,5 @@ Base styling for the following form elements:
 - Custom checkboxes
 - Custom radio buttons
 - Text area
+- Custom file upload
+
